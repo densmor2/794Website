@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>794 Final Project</title>
+<meta charset="utf-8" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    color: #C3373B;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    background-color:#E6D3B8;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#banner {
+    width: 1150px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+#wrapper {
+    width: 1250px;
+    margin: 0 auto;
+}
+.title-text {
+  color: #E6D3B8;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size:50pt;
+  transition-duration: .4s;
+}
+.title-text:hover {
+    text-decoration: underline #E6D3B8;
+    text-decoration-style:solid;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.basic-text {
+  color: #E6D3B8;
+  font-size: 14pt;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.header{
+    font-size: 18pt;
+    color: #E6D3B8;
+    font-family: 'Libre Franklin', sans-serif;
+}
+main {
+    overflow: hidden;
+}
+ul {
+    list-style-type:square;
+    color: #E6D3B8;
+}
+.new {
+    color: #E6D3B8;
+    text-decoration-thickness: 12pt;
+}
+.home main>article {
+    background-color: #C3373B;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 200px;
+}
+.left-col {
+    float: left;
+    padding: 10px;
+    width: 47%;
+}
+.right-col {
+    float: right;
+    padding: 10px;
+    width: 47%;
+}
+.feature-image {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    transition-duration: .2s;
+}
+.feature-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.feature-image-right {
+    float: right;
+    padding: 100px;
+    padding-top: 0;
+}
+.feature-image-left {
+    float: left;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+#button {
+    align-items: center;
+    text-align: center;
+}
+.button {
+    background-color: #E6D3B8; 
+    color: #C3373B; 
+    border: 9px solid #C3373B;
+    padding: 20px;
+    width: 55%;
+    font-weight: 1000;
+    font-size: 30pt;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: bold;
+    margin: 50px;
+    transition-duration: .4s;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.button:hover {
+  background-color: #C3373B;
+  transform: scale(1.175);
+  color: #E6D3B8;
+}
+footer {
+    border-top: #C3373B solid 3px;
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 1em;
+}
+</style>
+<script>
+     var openClose=0;
+		var img= document.getElementById ('leftimg')
+        var element= document.getElementById ('leftcap')
+		function swapLeftPic(){
+			if (openClose==0){
+				document.getElementById('leftimg').src='03-Ceramic-Traditions-mapSquare.jpg';
+				openClose=2; document.getElementById ('leftcap').innerHTML= "Southwest Ceramic Traditions"
+			} else {document.getElementById('leftimg').src='Mimbres-map - Copy.jpg';
+		openClose=0;  document.getElementById ('leftcap').innerHTML= "Major Mimbres Sites"
+		}
+		}
+    var openClose=0;
+		var img= document.getElementById ('rightimg')
+        var element= document.getElementById ('rightcap')
+		function swapRightPic(){
+			if (openClose==0){
+				document.getElementById('rightimg').src='7855- st. louis art mus.- hatfield.jpg';
+				openClose=2; document.getElementById ('rightcap').innerHTML= "Bowl #7855: geometric design, in-out kill hole"
+			} else {document.getElementById('rightimg').src='3879 denver museum of nat history.jpg';
+		openClose=0;  document.getElementById ('rightcap').innerHTML= "Bowl #3879: bird design, no kill hole"
+		}
+		}
+</script>
+</head>
+<body class="home">
+    <div id="wrapper">
+        <main>
+            <article>
+                    <h1 onclick="window.open('https://storymaps.arcgis.com/stories/9699a5b7b3a6429a801fcbbaa5aa19e5')" target="_blank" class="title-text"><b>The Distribution of Mimbres Pottery</b></h1>
+                    <hr size="3" width="90%" color="#E6D3B8" >
+                    <h2 class="basic-text"style="font-style: italic; width: 75%; margin-left: auto; margin-right: auto; text-align: center">Welcome to the website for the Mimbres Pottery StoryMap! This is the landing page for the project and it contains some background information on the project and more resources on the topic.</h1>
+                    <hr size="3" width="90%" color="#E6D3B8">
+                    <h2 class="header">Background</h2>
+                    <p class="basic-text">The practice of archaeology creates massive amounts of data including physical artifacts and their accompanying photographs and written reports, digital collections databases with information on where and how artifacts are stored and thier quality of preservation, and geospatial datasets including shapefiles and remote sensing data. The organization of and access to these data are thus highly important to keep the field running smoothly. Moreover, the dissemination of information within academic circles and in the general public is becoming the new norm. Platfoms like <a href="https://core.tdar.org/" target="_blank" class="basic-text">tDAR</a>, aka the Digital Archaeological Record, allow for easy data management for the owners <i>and</i> easy access to the general public, revolutionizing the way that archaeological information is shared. Instead of travelling to museums and having to pay a hefty fee for a ticket, individuals can now long on to tDAR and explore collections they would never have had access to otherwise and academia no longer sees the same amount of data hoarding by a single academic or organization. This project exemplifies the potentials of this new wave of dissemination by using data from the <a href="https://core.tdar.org/collection/22070/mimbres-pottery-images-digital-database-with-search" target="_blank" class="basic-text";>Mimbres Pottery Images Digital Database</a>, an open-access dataset housed in tDAR. </p>
+                    <h2 class="header">Further Reading</h2>
+                    <p>
+                        <ul>
+                            <li><a href="https://www.sapiens.org/archaeology/mimbres-pottery-color/" target="_blank" class="basic-text">The Hidden Color Code in Mimbres Pottery- Sapiens</a></li>
+                            <li><a href="https://www.archaeologysouthwest.org/free-resources/fact-sheets/who-or-what-is-mimbres/" target="_blank" class="basic-text">Who or What Is Mimbres?- Archaeology Southwest</a></li>
+                            <li><a href="https://www.archaeology.org/issues/89-1305/features/738-mimbres-bowls-southwest-collapse-reorganization" target="_blank" class="basic-text">On the Trail of the Mimbres- Archaeology Magazine</a></li>
+                            <li><a href="https://www.archaeologysouthwest.org/2020/09/18/understanding-mimbres-painted-pottery/" target="_blank" class="basic-text">Understanding Mimbres Painted Pottery- Archaeology Southwest</a></li>
+                        </ul></p>
+                <article class="left-col">
+                    <h2 class="header" style="text-align: center;">Maps of the Mimbres Region</h2>
+                    <img id=leftimg src="Mimbres-map - Copy.jpg" alt="Mimbres Sites Map" class="feature-image" onclick="swapLeftPic()"/>
+                    <h2 id=leftcap style="text-align: center;">Major Mimbres Sites</h2>
+                </article>
+                <article class="right-col">
+                    <h2 class="header" style="text-align: center;">Preview of Mimbres Bowls</h2>
+                    <img id=rightimg src="3879 denver museum of nat history.jpg" alt="Bowl without kill hole" class="feature-image" onClick="swapRightPic()"/>
+                    <h2 id=rightcap style="text-align: center;">Bowl #3879: bird design, no kill hole</h2>
+                </article>
+            </article>        
+            <div id=button>
+                <button onclick="window.open('https://storymaps.arcgis.com/stories/9699a5b7b3a6429a801fcbbaa5aa19e5')" target="_blank" class="button button1"> Access the Storymap Here</button>
+            </div>
+            <footer style="align-items: center; text-align: center;">Allison Densmore &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Urban Planning 794 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fall 2021</footer>
+</main>
+</div>
+</html>
